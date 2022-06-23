@@ -1,0 +1,113 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(/images/pens.jpg);
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 35px;
+  font-style: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 190px;
+  margin-right: 25px;
+  color: darkcyan;
+}
+.container {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  min-height: 100px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background: lightblue;
+}
+#newtask {
+  position: relative;
+  padding: 30px 20px;
+}
+#newtask input {
+  width: 75%;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: 2px black;
+  padding: 12px;
+  color: cornflowerblue;
+  font-weight: 500;
+  position: relative;
+}
+#newtask input:focus {
+  outline: none;
+  border-color: #83c5be;
+}
+#newtask button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #53687e;
+  border: none;
+  color: black;
+  cursor: pointer;
+  outline: none;
+}
+#tasks {
+  background-color: #006d77;
+  padding: 30px 20px;
+  margin-top: 10px;
+
+  width: 100%;
+  position: relative;
+}
+.task {
+  background-color: #83c5be;
+  height: 50px;
+  margin-bottom: 8px;
+  padding: 5px 10px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #edf6f9;
+  cursor: pointer;
+}
+.task span {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.task button {
+  background-color: darkcyan;
+  color: black;
+  height: 100%;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+/* media queries */
+@media only screen and (max-width: 468px) {
+  .container {
+    min-width: 350px;
+    transition: all 1s ease-in-out;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .container {
+    min-width: 290px;
+    transition: all 1s ease-in-out;
+  }
+}
