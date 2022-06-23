@@ -5,7 +5,7 @@
 // lists.forEach((item) => {
 //   console.log(item.name);
 //   document.querySelector("#tasks").innerHTML += `
-//  <p><input type="checkbox">${item.name}</p>`;
+//  <p><input type="text">${item.name}</p>`;
 // });
 // function TaskName() {
 //   // e.preventDefault();
@@ -32,7 +32,7 @@
 // })();
 // // loadData();
 // // Add Event listener
-// document.querySelector("#TaskName").addEventListener("click", TaskName);
+// document.querySelector("#name").addEventListener("click", TaskName);
 // // delete record
 // document.querySelector("#DeleteInput").addEventListener("click", (e) => {
 //   e.preventDefault();
